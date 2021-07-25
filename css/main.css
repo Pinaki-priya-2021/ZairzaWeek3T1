@@ -1,0 +1,121 @@
+
+    :root{
+        --primary:#212529;
+        --secondary:#343a40;
+
+    }
+
+
+*{
+    left: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: var(--primary);
+}
+
+#topDiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: var(--secondary);
+    padding: 1%;
+}
+
+#search{
+    padding: 3%;
+    background: transparent;
+    border: 3px solid var(--primary);
+    border-radius: 20px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#search:focus{
+    background-color: var(--primary);
+    outline: none;
+}
+#search:focus #search::placeholder{
+    color: var(--secondary);
+}
+#search::placeholder{
+    color:#adb5bd;
+    margin: 2%;
+}
+.container{
+    width: 250px;
+    height: 390px;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    background-color: var(--secondary);
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    width: 100%;
+    height: 80%;
+}
+#Movietitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.5px;
+    color: white;
+}
+#Movietitle span{
+    background-color: var(--primary);
+    padding: 2%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#Movietitle span.green{
+    color: lightgreen;
+}
+#Movietitle span.yellow{
+    color: yellow;
+}
+#Movietitle span.red{
+    color: red;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#info{
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    top: 8.3rem;
+    bottom: 0;
+    transition:transform 0.3s ease-in-out ;
+}
+#info h3{
+    margin-bottom: 2%;
+}
+.container:hover #info{
+    transform: translateY(0%);
+}
+
+#find{
+    border-radius: 50px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 2%;
+    font-size: 1rem;
+}
+
+#Movietitle h3{
+    font-style: italic;
+}
