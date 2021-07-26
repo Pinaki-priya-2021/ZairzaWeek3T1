@@ -22,10 +22,11 @@ body{
 
 #topDiv{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
+    /* align-items: flex-end; */
     background-color: var(--secondary);
     padding: 1%;
+
 }
 
 #search{
@@ -120,4 +121,12 @@ main{
 
 #Movietitle h3{
     font-style: italic;
+}
+
+#topDiv h3{
+    margin-top: 10px;
+}
+#topDiv a{
+    text-decoration: none;
+    color: black;
 }
