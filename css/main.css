@@ -40,6 +40,7 @@ body{
 #search:focus{
     background-color: var(--primary);
     outline: none;
+    color: whitesmoke;
 }
 #search:focus #search::placeholder{
     color: var(--secondary);
@@ -112,8 +113,9 @@ main{
     background-color: var(--primary);
     color: white;
     border: none;
-    padding: 2%;
+    padding: 5%;
     font-size: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
 #Movietitle h3{
